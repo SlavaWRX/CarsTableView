@@ -7,6 +7,8 @@
 //
 
 #import "CarTableViewCell.h"
+#import "Car.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface CarTableViewCell()
 
@@ -25,7 +27,11 @@
 }
 
 - (void) configureWithCar:(Car *) car {
-    //self.carImageView.image =
+    
+    
+    [self.carImageView sd_setImageWithURL:[NSURL URLWithString:car.thumbnail]];
+    
+    self.carLabel.text = car.name;
     
     
 }

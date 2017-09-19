@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A8D005193E0ACCB471ABF0 /* libPods-TableViewTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2972508055575EA22812D0 /* libPods-TableViewTest.a */; };
+		8779359D4280E6D63A7C8200 /* Pods_TableViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B27FC6F861E9E68C1B7E415 /* Pods_TableViewTest.framework */; };
 		F94DCA3E1F6FDC0500466634 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA3D1F6FDC0500466634 /* main.m */; };
 		F94DCA411F6FDC0500466634 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA401F6FDC0500466634 /* AppDelegate.m */; };
 		F94DCA441F6FDC0500466634 /* CarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94DCA431F6FDC0500466634 /* CarTableViewController.m */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E2972508055575EA22812D0 /* libPods-TableViewTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5121979CA6BFC5AF9A79F542 /* Pods-TableViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewTest/Pods-TableViewTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5B27FC6F861E9E68C1B7E415 /* Pods_TableViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C7CA3952C533024119C79D /* Pods-TableViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewTest/Pods-TableViewTest.release.xcconfig"; sourceTree = "<group>"; };
 		F94DCA391F6FDC0500466634 /* TableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94DCA3D1F6FDC0500466634 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A8D005193E0ACCB471ABF0 /* libPods-TableViewTest.a in Frameworks */,
+				8779359D4280E6D63A7C8200 /* Pods_TableViewTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 		6532289E1CC20CBF3C73166A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E2972508055575EA22812D0 /* libPods-TableViewTest.a */,
+				5B27FC6F861E9E68C1B7E415 /* Pods_TableViewTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,9 +207,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TableViewTest/Pods-TableViewTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

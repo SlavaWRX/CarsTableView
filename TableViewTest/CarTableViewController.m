@@ -9,6 +9,8 @@
 #import "CarTableViewController.h"
 #import "Car.h"
 #import "CarTableViewCell.h"
+#import "AFHTTPSessionManager.h"
+#import "CarDetailViewController.h"
 
 @interface CarTableViewController ()
 
@@ -32,13 +34,25 @@
 
 #pragma mark - Table view data source UITableViewDataSource
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    CarDetailViewController  *vc = (CarDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"stbID"];
+    
+    [self.navigationController pushViewController:vc animated:true];
+    
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return self.cars.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     CarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
     [cell configureWithCar: self.cars[indexPath.row]];
     
     return cell;
@@ -54,29 +68,27 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    [manager GET:@"https://fethica.github.io/UITableViewJSON/characters.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
+    
+    [manager GET:@"https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Contents.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
         NSArray *jsonArray = (NSArray *)responseObject;
-        NSMutableArray *tempNinjas = [[NSMutableArray alloc] init];
+        NSMutableArray *tempCars = [[NSMutableArray alloc] init];
         
         for (NSDictionary *dic in jsonArray) {
-            Ninja *ninja = [[Ninja alloc] initWithDictionary:dic];
-            [tempNinjas addObject:ninja];
+            Car *car = [[Car alloc] initWithDictionary:dic];
+            [tempCars addObject:car];
         }
         
-        self.ninjas = [[NSArray alloc] initWithArray:tempNinjas];
-        tempNinjas = nil;
+        self.cars = [[NSArray alloc] initWithArray:tempCars];
+        tempCars = nil;
         
         [self.tableView reloadData];
         
     } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error %@", error);
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Ninjas"
-                                                            message:[error localizedDescription]
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"Ok"
-                                                  otherButtonTitles:nil];
-        [alertView show];
     }];
     
 }

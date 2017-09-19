@@ -28,9 +28,9 @@
     return self;
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)dic {
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
     
-    self = [self initWithName:dic[@"name"] thumbnail:dic[@"thumbnail"] photo:dic[@"photo"] description:dic[@"description"]];
+    self = [self initWithName:dict[@"name"] thumbnail:dict[@"thumbnail"] photo:dict[@"photo"] description:dict[@"description"]];
     
     return self;
 }

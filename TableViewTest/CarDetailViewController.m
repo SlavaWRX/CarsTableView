@@ -21,8 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = [self.car name];
-    [self.photo setImageWithURL:[NSURL URLWithString:self.car.photo]
-               placeholderImage:[UIImage imageNamed:@"300-300.jpg"]];
+//    [self.photo setImageWithURL:[NSURL URLWithString:self.car.photo]
+//               placeholderImage:[UIImage imageNamed:@"300-300.jpg"]];
     self.desc.text = self.car.desc;
 }
 
