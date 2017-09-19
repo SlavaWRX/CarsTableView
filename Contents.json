@@ -12,7 +12,7 @@
 	},
 	{
 		"name": "RA",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/sakura.png",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/RA.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/sakura.jpg",
 		"description": "The WRX was turned up to 11 in February 1994 when Subaru introduced the STI version. They entered the World Rally Championship with Colin McRae behind the wheel, who had proven himself with a Legacy before. These STIs were first converted from regular WRXs at the Subaru factory. The modifications were mostly mechanical, so that the STIs ended up with 250 horses, stronger suspension and transmission, and in case of the lightweight RA edition, an electromechanical differential as well.In 1996, the GC8D was introduced with updated styling and more power.By the time Subaru came out with the second generation, even the normal WRXs had 240 horses in JDM tune."
 	},
@@ -24,25 +24,19 @@
 	},
 	{
 		"name": "The Fox",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/neji.png",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/The%20Fox%20100x100.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/neji.png",
 		"description": "The next facelift came when the STI was introduced to America in 2004. Since Subaru won the World Rally Championship in both 2001 and 2003, everybody wanted blue Imprezas with golden wheels. It was tweaked again in 2006, proving once again that Subaru had serious issues when it came to the styling. The engine was changed to the 2.5-liter turbocharged intercooled EJ255 unit for more torque and 230 horsepower. The WRX ran on 17 wheels now, and got fatter."
 	},
 	{
-		"name": "Chōji Akimichi",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/choji.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/choji.png",
-		"description": "Chōji was born into the Akimichi clan, and is slated to become the Sixteenth head of the Akimichi (秋道16代目当主, Akimichi Jūrokudaime Tōshu) after his father, Chōza. When Chōji was younger, he was often put down for not being good at a child's game called \"Ninja\", which appears to be a cross between tag and hide and seek, often employing the use of shuriken made out of cardboard and sticks. His peers would always berate him, telling him that any team that he was on was bound to lose. One day, they simply refused to let him play at all. However, Shikamaru stuck up for him, saying that the teams would be uneven if Chōji didn't join them. This gave Chōji a little hope, although, in the end, they still refused to let him play."
-	},
-	{
 		"name": "Mainstream",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/garaa.png",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Mainstream%20100x100.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/garaa.jpg",
 		"description": "For the 2008 model year, Subaru gave the Impreza lineup a radical redesign that made it larger and more in-line with competition like the Mazda3. It also sought to make the WRX more mainstream with a softened suspension and a far less ostentatious body than its predecessors. The car could still haul ass, as power remained at 227 horsepower, but the hoonage-loving fans were outraged. The boxier, more powerful STI version — which controversially came only as a hatchback —fared better, though it was far less hardcore than its predecessors."
 	},
 	{
 		"name": "Pokemon",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/hinata.jpg",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Pokemon%20100x100.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/hinata.jpg",
 		"description": "Realizing that a car for crazy people like the WRX should never go mainstream, Subaru realized their mistake and upgraded the suspension for the 2009 model year. They also bumped power to 265 horses. In 2011, the widebody kit from the STI was added to the WRX, and the sedan STI was brought back."
 	}
