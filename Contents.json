@@ -6,7 +6,7 @@
 	},
 	{
 		"name": "First WRX",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/sasuke.png",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/First%20WRX%20100x100.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/sasuke.jpg",
 		"description": "The WRX was introduced in 1992 with the sedan and wagon body styles. While it was powered by a 240 horsepower 2.0-liter boxer engine in Japan, Europe had to make do with only 210. Still, we were better off than North-America, as the first generation WRX never made it there. Also for the Japanese domestic market, a stripped-down RA version was available for those who wanted to build a race car with manual windows, no ABS, less soundproofing, shorter gears and a Nardi steering wheel."
 	},
@@ -18,7 +18,7 @@
 	},
 	{
 		"name": "Horse",
-		"thumbnail": "http://fethica.github.io/UITableViewJSON/images/thumbs/kakashi.png",
+		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Hourse%20100x100.png",
 		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/kakashi.jpg",
 		"description": "The horse new Impreza WRX wasn't a success as far as the design goes, but with 250 horsepower coming from that boxer, buyers could forgive easily. Also, America got the car finally, even if that only had 227 horses. With the four-speed automatic, this was more about traction than speed anyway."
 	},
