@@ -13,6 +13,4 @@
 
 @property (nonatomic) Car *car;
 
-- (void) configureWithCar:(Car *) car;
-
 @end

@@ -36,12 +36,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    // get car
+    Car *car = [self getCarAtIndexPath:indexPath];
+    
+    // pass car
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CarDetailViewController  *carDetailViewController = (CarDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"stbID"];
+    carDetailViewController.car = car;
     
-    CarDetailViewController  *vc = (CarDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"stbID"];
-    
-    [self.navigationController pushViewController:vc animated:true];
-    
+    // show car
+    [self.navigationController pushViewController:carDetailViewController animated:true];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -53,7 +57,8 @@
     
     CarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    [cell configureWithCar: self.cars[indexPath.row]];
+    Car *car = [self getCarAtIndexPath:indexPath];
+    [cell configureWithCar: car];
     
     return cell;
 }
@@ -64,11 +69,14 @@
 
 #pragma mark - Navigation
 
+- (Car*) getCarAtIndexPath: (NSIndexPath*) indexPath {
+    return self.cars[indexPath.row];
+}
+
 - (void)loadCars {
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
     
     [manager GET:@"https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Contents.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
