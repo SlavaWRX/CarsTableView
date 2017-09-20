@@ -26,6 +26,7 @@
     
 }
 
+
 - (void) configureWithCar:(Car *) car {
 
     
@@ -34,7 +35,7 @@
     [self.photo sd_setImageWithURL:[NSURL URLWithString:car.photo]
                   placeholderImage:[UIImage imageNamed:@"300-300.jpg"]];
     
-    self.desc.text = self.car.desc;
+    self.desc.text = car.desc;
 
     
     
