@@ -1,43 +1,43 @@
 [{
 		"name": "The Legacy",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/The%20Legacy%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/naruto.png",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/The%20Legacy.png",
 		"description": "The WRX story starts with the Impreza's predecessor, the Legacy. In 1989, Subaru broke the world record for long distance high speed runs in Arizona by covering 100,000 kilometers (62,137 miles) in 447 hours, 44 minutes and 9.887 (not 10!) seconds. That's an average speed of 138.77 mph. What's even better is that in Japan, you could get the RS version with a five-speed manual and the 2.0-liter EJ20G turbo engine producing 220 horsepower and 200 foot pounds. In a slightly modified form, this (EJ20F4) went into the first Impreza WRX."
 	},
 	{
 		"name": "First WRX",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/First%20WRX%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/sasuke.jpg",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/First%20WRX.png",
 		"description": "The WRX was introduced in 1992 with the sedan and wagon body styles. While it was powered by a 240 horsepower 2.0-liter boxer engine in Japan, Europe had to make do with only 210. Still, we were better off than North-America, as the first generation WRX never made it there. Also for the Japanese domestic market, a stripped-down RA version was available for those who wanted to build a race car with manual windows, no ABS, less soundproofing, shorter gears and a Nardi steering wheel."
 	},
 	{
 		"name": "RA",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/RA.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/sakura.jpg",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/RA.png",
 		"description": "The WRX was turned up to 11 in February 1994 when Subaru introduced the STI version. They entered the World Rally Championship with Colin McRae behind the wheel, who had proven himself with a Legacy before. These STIs were first converted from regular WRXs at the Subaru factory. The modifications were mostly mechanical, so that the STIs ended up with 250 horses, stronger suspension and transmission, and in case of the lightweight RA edition, an electromechanical differential as well.In 1996, the GC8D was introduced with updated styling and more power.By the time Subaru came out with the second generation, even the normal WRXs had 240 horses in JDM tune."
 	},
 	{
 		"name": "Horse",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Hourse%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/kakashi.jpg",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Hourse.png",
 		"description": "The horse new Impreza WRX wasn't a success as far as the design goes, but with 250 horsepower coming from that boxer, buyers could forgive easily. Also, America got the car finally, even if that only had 227 horses. With the four-speed automatic, this was more about traction than speed anyway."
 	},
 	{
 		"name": "The Fox",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/The%20Fox%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/neji.png",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/The%20Fox.png",
 		"description": "The next facelift came when the STI was introduced to America in 2004. Since Subaru won the World Rally Championship in both 2001 and 2003, everybody wanted blue Imprezas with golden wheels. It was tweaked again in 2006, proving once again that Subaru had serious issues when it came to the styling. The engine was changed to the 2.5-liter turbocharged intercooled EJ255 unit for more torque and 230 horsepower. The WRX ran on 17 wheels now, and got fatter."
 	},
 	{
 		"name": "Mainstream",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Mainstream%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/garaa.jpg",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Mainstream.png",
 		"description": "For the 2008 model year, Subaru gave the Impreza lineup a radical redesign that made it larger and more in-line with competition like the Mazda3. It also sought to make the WRX more mainstream with a softened suspension and a far less ostentatious body than its predecessors. The car could still haul ass, as power remained at 227 horsepower, but the hoonage-loving fans were outraged. The boxier, more powerful STI version — which controversially came only as a hatchback —fared better, though it was far less hardcore than its predecessors."
 	},
 	{
 		"name": "Pokemon",
 		"thumbnail": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Pokemon%20100x100.png",
-		"photo": "http://fethica.github.io/UITableViewJSON/images/profile/hinata.jpg",
+		"photo": "https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Images/Pokemon.png",
 		"description": "Realizing that a car for crazy people like the WRX should never go mainstream, Subaru realized their mistake and upgraded the suspension for the 2009 model year. They also bumped power to 265 horses. In 2011, the widebody kit from the STI was added to the WRX, and the sedan STI was brought back."
 	}
 ]
