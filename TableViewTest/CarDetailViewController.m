@@ -7,6 +7,8 @@
 //
 
 #import "CarDetailViewController.h"
+#import "SDWebImage/UIImageView+WebCache.h"
+
 
 @interface CarDetailViewController ()
 
@@ -20,10 +22,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    
+}
+
+- (void) configureWithCar:(Car *) car {
+
+    
     self.title = [self.car name];
-//    [self.photo setImageWithURL:[NSURL URLWithString:self.car.photo]
-//               placeholderImage:[UIImage imageNamed:@"300-300.jpg"]];
+    
+    [self.photo sd_setImageWithURL:[NSURL URLWithString:car.photo]
+                  placeholderImage:[UIImage imageNamed:@"300-300.jpg"]];
+    
     self.desc.text = self.car.desc;
+
+    
+    
 }
 
 @end
