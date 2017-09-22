@@ -10,6 +10,5 @@
 
 @interface CarTableViewController : UITableViewController
 
-
 @end
 

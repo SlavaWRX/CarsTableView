@@ -12,15 +12,22 @@
 #import "AFHTTPSessionManager.h"
 #import "CarDetailViewController.h"
 
+
 @interface CarTableViewController ()
 
+
 @property (strong, nonatomic)NSArray *cars;
+
+@property (assign, nonatomic) BOOL isLoading;
+@property (assign, nonatomic) BOOL hasNextPage;
+@property (assign, nonatomic) int currentPage;
 
 @end
 
 @implementation CarTableViewController
 
 - (void)viewDidLoad {
+    
    
     [super viewDidLoad];
     
@@ -32,7 +39,7 @@
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"cell"];
 }
 
-#pragma mark - Table view data source UITableViewDataSource
+#pragma mark - UITableViewDataSource
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -49,7 +56,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
+    
     return self.cars.count;
 }
 
@@ -59,6 +66,7 @@
     
     Car *car = [self getCarAtIndexPath:indexPath];
     [cell configureWithCar: car];
+    
     
     return cell;
 }
@@ -99,7 +107,19 @@
         
     }];
     
+
+    
 }
+
+#pragma mark - UITableViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+}
+
+
+
 
 @end
 
