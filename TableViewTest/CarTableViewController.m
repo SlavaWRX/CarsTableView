@@ -16,11 +16,9 @@
 @interface CarTableViewController ()
 
 
-@property (strong, nonatomic)NSArray *cars;
+@property (strong, nonatomic) NSMutableArray *cars;
 
 @property (assign, nonatomic) BOOL isLoading;
-@property (assign, nonatomic) BOOL hasNextPage;
-@property (assign, nonatomic) int currentPage;
 
 @end
 
@@ -31,6 +29,8 @@
    
     [super viewDidLoad];
     
+    self.cars = [NSMutableArray array];
+    self.isLoading = false;
     self.title = @"Cars";
     
     [self loadCars];
@@ -83,25 +83,27 @@
 
 - (void)loadCars {
     
+    if (self.isLoading) {
+        return;
+    }
+    
+    self.isLoading = true;
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
-    
     [manager GET:@"https://raw.githubusercontent.com/SlavaWRX/CarsTableView/master/Contents.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
         NSArray *jsonArray = (NSArray *)responseObject;
-        NSMutableArray *tempCars = [[NSMutableArray alloc] init];
+        
         
         for (NSDictionary *dic in jsonArray) {
             Car *car = [[Car alloc] initWithDictionary:dic];
-            [tempCars addObject:car];
+            [self.cars addObject:car];
         }
         
-        self.cars = [[NSArray alloc] initWithArray:tempCars];
-        tempCars = nil;
         
         [self.tableView reloadData];
-        
+        self.isLoading = false;
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error %@", error);
         
@@ -111,11 +113,15 @@
     
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UIScrollViewDelegate
 
-- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat screenHeight = UIScreen.mainScreen.bounds.size.height;
+    CGPoint contentOffset = scrollView.contentOffset;
+    CGFloat contentHeight = scrollView.contentSize.height;
+    if (contentOffset.y + 2 * screenHeight >= contentHeight) {
+        [self loadCars];
+    }
 }
 
 
